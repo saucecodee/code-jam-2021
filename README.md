@@ -4,9 +4,9 @@ Solutions to Code Jam 2021 algorithim and data structure questions
 
 ## How to Contribute
 
-- To answer a question, open any of the questions folder from Q1 - Q2
-- Create a file with the following format `question`_by_`githubusername`
-- Write your solution in the file and push
+- To provide a solution to a question, open the question folder and check the .txt file for the question.
+- Create a file with the following format, `question`_by_`githubusername`. Eg Q1_by_saucecodee
+- Write your solution in the file and push 🚀
 
 ## Note
 
