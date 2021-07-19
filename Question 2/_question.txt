@@ -1,18 +1,31 @@
-Example 2:
+Question 2.
+We have a collection of stones, each stone has a positive integer weight.
 
-Input: nums = [1,17,5,10,13,15,10,5,16,8]
-Output: 7
-Explanation: There are several subsequences that achieve this length.
-One is [1, 17, 10, 13, 10, 16, 8] with differences (16, -7, 3, -3, 6, -8).
+Each turn, we choose the two heaviest stones and smash them together.  Suppose the stones have weights x and y with x <= y.  The result of this smash is:
 
-Example 3:
+    If x == y, both stones are totally destroyed;
+    If x != y, the stone of weight x is totally destroyed, and the stone of weight y has new weight y-x.
 
-Input: nums = [1,2,3,4,5,6,7,8,9]
-Output: 2
+At the end, there is at most 1 stone left.  Return the weight of this stone (or 0 if there are no stones left.)
 
  
 
-Constraints:
+Example 1:
 
-    1 <= nums.length <= 1000
-    0 <= nums[i] <= 1000
+Input: [2,7,4,1,8,1]
+Output: 1
+Explanation: 
+We combine 7 and 8 to get 1 so the array converts to [2,4,1,1,1] then,
+we combine 2 and 4 to get 2 so the array converts to [2,1,1,1] then,
+we combine 2 and 1 to get 1 so the array converts to [1,1,1] then,
+we combine 1 and 1 to get 0 so the array converts to [1] then that's the value of last stone.
+
+ 
+
+Note:
+
+    1 <= stones.length <= 30
+    1 <= stones[i] <= 1000
+
+
+
